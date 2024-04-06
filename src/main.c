@@ -38,7 +38,7 @@ int ReadDir(char* pwd) {
                 char subdir[FILENAME_MAX];
                 sprintf(subdir, "%s%s/", pwd, entry->d_name);
                 ReadDir(subdir);
-                *subdir = NULL;
+                //*subdir = (char*)NULL;
             } if(str_compare(entry->d_name, ".")) dir_count += 1;
         } else file_count += 1;
     }

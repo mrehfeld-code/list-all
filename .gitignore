@@ -1,0 +1,8 @@
+# build files
+build/*
+bin/*
+
+# caches 
+*.idea*
+*.vs*
+*._*
